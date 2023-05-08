@@ -1,0 +1,17 @@
+spring:
+  data.mongodb:
+    authentication-database: admin
+    username: user
+    password: pass
+    database: notesdb
+    port: 27017
+    host: localhost
+
+server:
+  port: 8080
+
+logging.level:
+  org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+  logging.level.org.springframework.web: DEBUG
+  com.example.notesservice: DEBUG
+  ROOT: INFO
